@@ -6,7 +6,7 @@ const Cards = ({courses}) => {
    <>
         {courses.map((items,index)=>{
             return (
-                <div className='w-72 md:w-64  bg-zinc-50 rounded-lg overflow-hidden p-2'>
+                <div className='w-72 md:w-64 border border-black  bg-zinc-100 rounded-lg overflow-hidden p-2'>
                 <div className="logo h-32 bg-zinc-700 overflow-hidden rounded-md">
                     <img className='w-full h-full object-cover'  src={items.img} alt="" />
                 </div>

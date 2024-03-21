@@ -6,7 +6,7 @@ import Cards from './Cards'
 const Course = ({courses,heros}) => {
   return (
     <>
-    <div className='w-full  bg-zinc-200 text-black'>
+    <div className='w-full bg-zinc-50 text-black'>
         
     <Navbar/>
     {heros.map((item) => {
