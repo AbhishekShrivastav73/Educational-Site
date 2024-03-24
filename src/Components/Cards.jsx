@@ -1,7 +1,8 @@
 
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 const Cards = ({courses}) => {
-    
+   
   return (
    <>
         {courses.map((items,index)=>{
@@ -17,7 +18,7 @@ const Cards = ({courses}) => {
                     <p>{items.language}</p>
                 </div>
                 <p className={`${items.beginner ? 'text-green-400' : 'text-red-400'}`}>{items.beginner ? 'Beginner Friendly' : 'Intermediate Level'}</p>
-                <button className='bg-[#8862fc] px-4 py-1 text-white mt-2 mb-2 rounded-md'>View</button>
+                <Link className='bg-[#8862fc] text-white px-4 py-1 mt-2' to={`/course/${items.name}`}>Explore</Link>
             </div>
             )
         })}

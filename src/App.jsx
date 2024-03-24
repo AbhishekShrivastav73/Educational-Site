@@ -5,6 +5,7 @@ import Login from './Components/Login'
 import Signup from './Components/Signup'
 import Course from './Components/Course'
 import Home from './Components/Home'
+import Shery from './Components/Shery'
 const App = () => {
   const [courses,Setcourse] = useState([
     {name : 'Sheryians Coding School', beginner : true, type : 'Full Stack Development',language : 'Hindi',img :'https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg'},
@@ -33,6 +34,7 @@ const App = () => {
       <Route path='/' element={<Login  />} />
       <Route path='/signup' element={<Signup  getUsers={getUsers} />} />
       <Route path='/course' element={<Course courses={courses} heros={hero} />} />
+      <Route path='/course/:name' element={<Shery/>} />
       <Route path='/home' element={<Home users={users} heros={hero}/>} />
     </Routes>
     </>
