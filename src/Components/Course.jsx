@@ -8,7 +8,7 @@ const Course = ({courses,heros}) => {
     <>
     <div className='w-full bg-zinc-50 text-black'>
         
-    <Navbar/>
+    
     {heros.map((item) => {
         if (item.type === "course") {
           return (
