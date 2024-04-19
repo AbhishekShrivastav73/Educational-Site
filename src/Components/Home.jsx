@@ -10,7 +10,7 @@ const Home = ({heros,users}) => {
     }
   return (
     <div>
-        <Navbar users={users}/>
+        
         {
             heros.map((items)=>{
                 if (items.type === "Home") {
